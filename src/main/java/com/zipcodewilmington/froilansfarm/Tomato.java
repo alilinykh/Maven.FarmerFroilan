@@ -1,11 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Tomato extends Crop implements Produce {
-    public boolean fertilized() {
-        return false;
-    }
+public class Tomato extends Crop  {
 
-    public boolean harvested() {
-        return false;
-    }
 }

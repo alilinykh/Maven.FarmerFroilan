@@ -8,4 +8,8 @@ public class Vehicle implements NoiseMaker,Ridable {
     public void dismount() {
 
     }
+
+    public void makeNoise() {
+
+    }
 }
