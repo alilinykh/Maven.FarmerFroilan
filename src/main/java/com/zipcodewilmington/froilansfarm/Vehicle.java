@@ -1,4 +1,11 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Vehicle {
+public class Vehicle implements NoiseMaker,Ridable {
+    public void mount() {
+
+    }
+
+    public void dismount() {
+
+    }
 }

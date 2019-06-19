@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Pilot {
+public class Pilot extends Person {
+    public void fly(){};
 }
