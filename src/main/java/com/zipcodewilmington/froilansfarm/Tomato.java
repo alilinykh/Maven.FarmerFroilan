@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Tomato extends Crop  {
+public class Tomato implements Edible {
 
 }

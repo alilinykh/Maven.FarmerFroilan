@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class FarmVehicle extends Vehicle{
+public interface FarmVehicle{
 
-
-
+    public void harvest(Crop crop);
 }

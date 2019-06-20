@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Produce {
-    public boolean fertilized();
-    public boolean harvested();
+public interface Produce<T extends Edible>{
+     T yield();
 
 }

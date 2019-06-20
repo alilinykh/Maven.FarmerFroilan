@@ -1,12 +1,18 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Chicken extends Animal implements Produce {
+public class Chicken extends Animal implements Produce<Egg> {
+    private boolean HBF;
 
-    public boolean fertilized() {
-        return false;
+
+    public void makeNoise() {
+
     }
 
-    public boolean harvested() {
-        return false;
+    public Egg yield() {
+        return new Egg();
+    }
+
+    public void eat(Edible edible) {
+
     }
 }
