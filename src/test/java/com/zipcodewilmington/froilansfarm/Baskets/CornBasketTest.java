@@ -48,7 +48,7 @@ public class CornBasketTest {
         basket.add(corn);
         basket.add(corn2);
         basket.add(corn3);
-        basket.remove();
+        basket.remove(1);
         Integer actual = basket.size();
         Integer expected = 2;
         Assert.assertEquals(expected, actual);

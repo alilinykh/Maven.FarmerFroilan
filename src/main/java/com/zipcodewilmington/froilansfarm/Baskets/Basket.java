@@ -24,8 +24,11 @@ public class Basket <T extends Edible> implements Edible {
         return list.size();
 
     }
-    public void remove(){
-        list.remove(0);
+    public void remove(Integer numToRemove){
+        for (int i = 0; i < numToRemove; i++) {
+            list.remove(0);
+        }
+
     }
 
 
