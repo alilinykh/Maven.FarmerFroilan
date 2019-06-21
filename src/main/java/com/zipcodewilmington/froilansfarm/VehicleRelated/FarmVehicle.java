@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.PersonRelated;
+package com.zipcodewilmington.froilansfarm.VehicleRelated;
 
 import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
 
