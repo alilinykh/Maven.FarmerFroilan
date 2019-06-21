@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Person implements Eater{
+public class Person implements Eater, NoiseMaker{
+    Integer meals;
     public String getName() {
         return name;
     }
@@ -10,7 +11,16 @@ public class Person implements Eater{
     }
 
     private String name;
-    public void eat() {
+    public void eat(Meals meals) {
+
+    }
+
+    public void makeNoise() {
+
+    }
+
+    @Override
+    public void eat(Edible edible) {
 
     }
 }

@@ -1,15 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Vehicle implements NoiseMaker,Ridable {
-    public void mount() {
+public abstract class Vehicle implements NoiseMaker,Ridable {
+    public void operate(Person person){};
 
-    }
-
-    public void dismount() {
-
-    }
-
-    public void makeNoise() {
-
-    }
 }

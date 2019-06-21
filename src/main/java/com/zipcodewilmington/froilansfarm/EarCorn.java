@@ -1,5 +1,4 @@
 package com.zipcodewilmington.froilansfarm;
 
-interface Ridable {
-
+public class EarCorn implements Edible {
 }

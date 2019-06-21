@@ -1,7 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
 public interface Rider {
-    public void mount();
-    public void dismount();
-    public void ride();
+
+    public void mount(Ridable ridable);
+    public void dismount(Ridable ridable);
+    public void ride(Ridable ridable);
+
+
 }
