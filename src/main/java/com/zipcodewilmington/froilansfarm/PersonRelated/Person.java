@@ -1,8 +1,11 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.PersonRelated;
 
+import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
+import com.zipcodewilmington.froilansfarm.Meals;
+import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
-public class Person implements Eater, NoiseMaker{
+public class Person implements Eater, NoiseMaker {
     Integer meals;
     public String getName() {
         return name;

@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Baskets;
 
-import com.zipcodewilmington.froilansfarm.Edible;
+import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 
 import java.util.ArrayList;
 

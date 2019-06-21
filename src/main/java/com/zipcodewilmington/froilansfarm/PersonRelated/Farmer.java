@@ -1,16 +1,15 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.PersonRelated;
 
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
-import com.zipcodewilmington.froilansfarm.PersonRelated.Botanist;
-import com.zipcodewilmington.froilansfarm.PersonRelated.Rider;
+import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
+import com.zipcodewilmington.froilansfarm.Ridable;
 
 public class Farmer extends Person implements Botanist, Rider {
 
     public void plants(Crop crop, CropRow cropRow) {
         
     }
-
 
     public void mount(Ridable ridable) {
 
@@ -24,12 +23,7 @@ public class Farmer extends Person implements Botanist, Rider {
 
     }
 
-    @Override
     public void eat(Edible edible) {
-
-    }
-
-    public void plants(Crop crop, com.zipcodewilmington.froilansfarm.FieldRelated.CropRow cropRow) {
 
     }
 }

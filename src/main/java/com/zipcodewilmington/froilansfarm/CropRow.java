@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class CropRow extends Field {
+import com.zipcodewilmington.froilansfarm.FieldRelated.Field;
 
+public class CropRow extends Field {
 }

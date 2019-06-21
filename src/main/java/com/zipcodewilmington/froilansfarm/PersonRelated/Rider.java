@@ -1,4 +1,6 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.PersonRelated;
+
+import com.zipcodewilmington.froilansfarm.Ridable;
 
 public interface Rider {
 
