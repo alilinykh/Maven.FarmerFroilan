@@ -4,4 +4,5 @@ import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 
 public class CornBasket extends Basket <EarCorn> {
 
+
 }
