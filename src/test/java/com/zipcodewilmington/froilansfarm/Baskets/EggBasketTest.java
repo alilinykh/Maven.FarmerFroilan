@@ -47,7 +47,7 @@ public class EggBasketTest {
         basket.add(egg);
         basket.add(egg2);
         basket.add(egg3);
-        basket.remove();
+        basket.remove(1);
         Integer actual = basket.size();
         Integer expected = 2;
         Assert.assertEquals(expected, actual);

@@ -46,7 +46,7 @@ public class PotatoBasketTest {
         Basket basket = new Basket<PotatoBasket>();
         basket.add(pot);
         basket.add(pot2);
-        basket.remove();
+        basket.remove(1);
 
         Integer actual = basket.size();
         Integer expected = 1;
