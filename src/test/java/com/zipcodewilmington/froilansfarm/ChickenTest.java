@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Baskets.Basket;
 import com.zipcodewilmington.froilansfarm.Baskets.CornBasket;
 import com.zipcodewilmington.froilansfarm.Baskets.EggBasket;
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
@@ -11,19 +12,18 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ChickenTest {
-    Chicken chicken;
-    CornBasket cornBasket;
-    EarCorn earCorn;
-    EggBasket eggBasket;
+    private Chicken chicken;
+    private Basket cornBasket;
+    private EarCorn earCorn;
+    private Basket eggBasket;
 
 
     @Before
     public void setUp() throws Exception {
         chicken = new Chicken();
-        cornBasket = new CornBasket();
+        cornBasket = new Basket<EarCorn>();
         earCorn = new EarCorn();
-        eggBasket = new EggBasket();
-
+        eggBasket = new Basket<Egg>();
     }
 
     @Test
@@ -41,21 +41,20 @@ public class ChickenTest {
 
     @Test
     public void yield() {
-//        Integer expected = eggBasket.size() + 1;
-//        chicken.yield();
-//        Integer actual = eggBasket.size();
-//
-//        Assert.assertEquals(expected,actual);
+        Integer expected = eggBasket.size() + 1;
+        chicken.yield();
+        Integer actual = eggBasket.size();
+
+        Assert.assertEquals(expected,actual);
     }
 
     @Test
     public void eat() {
-        // see how much corn in the basket
-        //Integer expected = cornBasket.size() - 1;
-        //chicken.eat(cornBasket.get(earCorn));
-        //Integer actual = cornBasket.size();
+        Integer expected = cornBasket.size() - 1;
+        chicken.eat(earCorn);
+        Integer actual = cornBasket.size();
 
-        //Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -68,4 +67,5 @@ public class ChickenTest {
         Assert.assertTrue(chicken instanceof Produce);
 
     }
+
 }
