@@ -39,6 +39,21 @@ public class CornBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+    @Test
+    public void removeTest(){
+        EarCorn corn = new EarCorn();
+        EarCorn corn2 = new EarCorn();
+        EarCorn corn3 = new EarCorn();
+        Basket basket = new Basket<CornBasket>();
+        basket.add(corn);
+        basket.add(corn2);
+        basket.add(corn3);
+        basket.remove();
+        Integer actual = basket.size();
+        Integer expected = 2;
+        Assert.assertEquals(expected, actual);
+
+    }
 
     @After
     public void tearDown() throws Exception {

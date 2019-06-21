@@ -38,6 +38,22 @@ public class TomatoBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+    @Test
+    public void removeTest(){
+        Tomato tom = new Tomato();
+        Tomato tom2 = new Tomato();
+        Tomato tom3 = new Tomato();
+        Basket basket = new Basket<TomatoBasket>();
+        basket.add(tom);
+        basket.add(tom2);
+        basket.add(tom3);
+        basket.remove();
+        Integer actual = basket.size();
+        Integer expected = 2;
+        Assert.assertEquals(expected, actual);
+
+    }
+
 
     @After
     public void tearDown() throws Exception {

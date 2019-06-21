@@ -38,6 +38,21 @@ public class EggBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+    @Test
+    public void removeTest(){
+        Egg egg= new Egg();
+        Egg egg2 = new Egg();
+        Egg egg3 = new Egg();
+        Basket basket = new Basket<CornBasket>();
+        basket.add(egg);
+        basket.add(egg2);
+        basket.add(egg3);
+        basket.remove();
+        Integer actual = basket.size();
+        Integer expected = 2;
+        Assert.assertEquals(expected, actual);
+
+    }
 
 
 

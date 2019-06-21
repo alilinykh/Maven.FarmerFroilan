@@ -38,6 +38,21 @@ public class PotatoBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+    @Test
+    public void removeTest(){
+        Potato pot = new Potato();
+        Potato pot2 = new Potato();
+
+        Basket basket = new Basket<PotatoBasket>();
+        basket.add(pot);
+        basket.add(pot2);
+        basket.remove();
+
+        Integer actual = basket.size();
+        Integer expected = 1;
+        Assert.assertEquals(expected, actual);
+
+    }
 
     @After
     public void tearDown() throws Exception {
