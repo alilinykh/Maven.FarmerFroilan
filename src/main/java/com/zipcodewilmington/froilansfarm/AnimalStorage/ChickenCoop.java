@@ -6,4 +6,5 @@ import com.zipcodewilmington.froilansfarm.Chicken;
 import java.util.List;
 
 public class ChickenCoop extends AnimalStorage <Chicken> {
+
 }

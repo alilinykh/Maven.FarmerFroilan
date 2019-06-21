@@ -1,5 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Edibles.Edible;
+import com.zipcodewilmington.froilansfarm.Edibles.Egg;
+
 public class Chicken extends Animal implements Produce<Egg> {
     private boolean HBF;
 
