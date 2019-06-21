@@ -9,7 +9,8 @@ public class CropDuster extends Vehicle implements Aircraft {
 
     }
 
-    public void makeNoise() {
+    public String makeNoise() {
+        return null;
 
     }
 }

@@ -17,7 +17,8 @@ public class Person implements Eater, NoiseMaker{
 
     }
 
-    public void makeNoise() {
+    public String makeNoise() {
+        return null;
 
     }
 
