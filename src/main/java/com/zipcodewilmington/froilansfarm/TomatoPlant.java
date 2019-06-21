@@ -5,6 +5,7 @@ public class TomatoPlant implements Produce{
         return false;
     }
 
+
     public boolean harvested() {
         return false;
     }
