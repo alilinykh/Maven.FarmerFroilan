@@ -4,7 +4,29 @@ import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 
 import java.util.ArrayList;
 
-public class Basket <T extends Edible> {
-    ArrayList<T> list;
+public class Basket <T extends Edible> implements Edible {
+
+    ArrayList<T> list = new ArrayList<T>();
+
+    public Basket(final ArrayList<T> list) {
+        this.list = list;
+    }
+
+    public Basket() {
+
+    }
+
+
+    public void add(T edible){
+        list.add(edible);
+    }
+    public int size(){
+        return list.size();
+
+    }
+    public void remove(){
+        list.remove(0);
+    }
+
 
 }
