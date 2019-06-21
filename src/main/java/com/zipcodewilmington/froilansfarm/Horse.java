@@ -13,7 +13,8 @@ public class Horse extends Animal implements Ridable {
 
     }
 
-    public void makeNoise() {
+    public String makeNoise() {
+        return null;
 
     }
 

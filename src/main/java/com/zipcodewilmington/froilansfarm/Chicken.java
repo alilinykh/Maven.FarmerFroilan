@@ -7,8 +7,8 @@ public class Chicken extends Animal implements Produce<Egg> {
     private boolean HBF;
 
 
-    public void makeNoise() {
-
+    public String makeNoise() {
+        return null;
     }
 
     public Egg yield() {
