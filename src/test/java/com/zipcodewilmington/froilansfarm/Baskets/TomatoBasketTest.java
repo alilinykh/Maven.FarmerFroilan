@@ -47,9 +47,9 @@ public class TomatoBasketTest {
         basket.add(tom);
         basket.add(tom2);
         basket.add(tom3);
-        basket.remove();
+        basket.remove(2);
         Integer actual = basket.size();
-        Integer expected = 2;
+        Integer expected = 1;
         Assert.assertEquals(expected, actual);
 
     }
