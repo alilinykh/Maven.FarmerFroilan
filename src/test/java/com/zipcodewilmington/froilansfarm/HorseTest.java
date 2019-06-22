@@ -3,43 +3,45 @@ package com.zipcodewilmington.froilansfarm;
 import com.zipcodewilmington.froilansfarm.Baskets.Basket;
 import com.zipcodewilmington.froilansfarm.Baskets.CornBasket;
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
+import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Farmer;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 public class HorseTest {
-    Horse horse;
-    Basket cornBasket;
-    EarCorn earCorn;
-    Farmer farmer;
+    private Horse horse;
+    private Basket cornBasket;
+    private EarCorn earCorn;
+    private Farmer farmer;
 
 
     @Before
     public void setUp() throws Exception {
         horse = new Horse();
-        cornBasket = new Basket();
+        this.cornBasket = new Basket<>();
         earCorn = new EarCorn();
+        cornBasket.add(earCorn);
         farmer = new Farmer();
     }
 
     @Test
     public void mount() {
         horse.mount();
-        Assert.assertTrue(horse.getReadyToBeRidden());
+        Assert.assertTrue(horse.getReady());
     }
 
     @Test
     public void dismount() {
         horse.dismount();
-        Assert.assertFalse(horse.getReadyToBeRidden());
+        Assert.assertFalse(horse.getReady());
     }
 
     @Test
     public void makeNoise() {
-        String expected = "chickenNoise";
+        String expected = "horseNoise";
         String actual = horse.makeNoise();
         Assert.assertEquals(expected,actual);
     }
@@ -51,7 +53,7 @@ public class HorseTest {
         horse.eat(earCorn);
         Integer actual = cornBasket.size();
 
-        //Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testInheritance() {

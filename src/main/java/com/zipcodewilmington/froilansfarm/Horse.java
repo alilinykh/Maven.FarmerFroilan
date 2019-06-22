@@ -1,33 +1,40 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Baskets.Basket;
+import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 
-public class Horse extends Animal implements Ridable {
-    boolean isReadyToBeRidden = false;
+import java.util.Base64;
 
-    public boolean getReadyToBeRidden() {
-        return isReadyToBeRidden;
+public class Horse extends Animal implements Ridable {
+    private boolean ready = false;
+    Basket cornBasket = new Basket<EarCorn>();
+    Horse horse;
+
+    public boolean getReady() {
+        return ready;
     }
 
-    public void setReadyToBeRidden(boolean readyToBeRidden) {
-        isReadyToBeRidden = readyToBeRidden;
+    public void setReady(boolean ready) {
+        this.ready = ready;
     }
 
 
     public void mount() {
-
+        ready = true;
     }
 
     public void dismount() {
-
+        ready = false;
     }
 
     public String makeNoise() {
-        return null;
+        return "horseNoise";
 
     }
 
     public void eat(Edible edible) {
+        cornBasket.remove();
 
     }
 
