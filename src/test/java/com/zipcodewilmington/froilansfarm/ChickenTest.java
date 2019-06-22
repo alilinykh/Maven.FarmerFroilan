@@ -8,6 +8,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class ChickenTest {
@@ -20,9 +22,9 @@ public class ChickenTest {
     @Before
     public void setUp() throws Exception {
         chicken = new Chicken();
-        cornBasket = new CornBasket();
+        cornBasket = new CornBasket(new ArrayList<EarCorn>() );
         earCorn = new EarCorn();
-        eggBasket = new EggBasket();
+        eggBasket = new EggBasket(new ArrayList<Egg>());
 
     }
 
