@@ -21,4 +21,5 @@ public class Horse extends Animal implements Ridable {
     public void eat(Edible edible) {
 
     }
+
 }
