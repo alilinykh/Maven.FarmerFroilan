@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.VehicleRelated;
 
+import com.zipcodewilmington.froilansfarm.CropRow;
 import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
-import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
 import com.zipcodewilmington.froilansfarm.Person;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Froilanda;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Pilot;
@@ -27,10 +27,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
         System.out.println("Froilanda is flying");
     }
 
-    public void fertilize(CropRow cropRow) {
 
-
-    }
 
     public String makeNoise() {
 
@@ -49,4 +46,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     }
 
 
+    public void fertilize(CropRow cropRow) {
+
+    }
 }

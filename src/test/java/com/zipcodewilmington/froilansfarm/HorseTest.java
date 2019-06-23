@@ -21,7 +21,7 @@ public class HorseTest {
     @Before
     public void setUp() throws Exception {
         horse = new Horse();
-        this.cornBasket = new Basket<>();
+        this.cornBasket = new Basket<EarCorn>();
         earCorn = new EarCorn();
         cornBasket.add(earCorn);
         farmer = new Farmer();

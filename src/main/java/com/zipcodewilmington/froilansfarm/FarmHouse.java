@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FarmHouse {
-    private List <Person> farmHouse = new ArrayList<>();
+    private List <Person> farmHouse = new ArrayList<Person>();
 
     public List<Person> getFarmHouse() {
         return farmHouse;
