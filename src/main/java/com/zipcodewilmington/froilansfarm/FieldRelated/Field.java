@@ -19,9 +19,9 @@ public class Field {
         this.cropRows.remove(cropRow);
     }
 
-    public void remove(Integer Index) {
-        this.cropRows.remove(Index);
-    }
+   // public void remove(Integer Index) {
+       // this.cropRows.remove(Index);
+   // }
 
     public List<CropRow> getCropRows() {
         return cropRows;
