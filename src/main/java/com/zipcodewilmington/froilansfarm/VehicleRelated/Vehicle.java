@@ -12,7 +12,7 @@ public abstract class Vehicle implements NoiseMaker, Ridable {
 
     }
 
-    public abstract void fertilize(CropRow cropRow);
+
 
 
 }

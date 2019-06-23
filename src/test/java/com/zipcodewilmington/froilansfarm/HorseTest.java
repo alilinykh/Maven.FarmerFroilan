@@ -21,7 +21,8 @@ public class HorseTest {
     @Before
     public void setUp() throws Exception {
         horse = new Horse();
-        this.cornBasket = new Basket<EarCorn>();
+        this.cornBasket = new Basket<>();
+
         earCorn = new EarCorn();
         cornBasket.add(earCorn);
         farmer = new Farmer();
@@ -49,7 +50,7 @@ public class HorseTest {
     @Test
     public void eat() {
 //         see how much corn in the basket
-        Integer expected = cornBasket.size() - 3;
+        Integer expected = cornBasket.size() ;
         horse.eat(earCorn);
         Integer actual = cornBasket.size();
 

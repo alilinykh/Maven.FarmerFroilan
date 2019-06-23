@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Tractor extends Vehicle implements FarmVehicle {
 
-    FarmVehicle farmVehicle = new Tractor();
+
     Vehicle vehicle = new Tractor();
     Tractor tractor = new Tractor();
     public void harvest(CropRow cropRow) {
@@ -27,10 +27,10 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
     public void harvest(Crop crop) {
 
-        if(vehicle== tractor && crop.isHasBeenFertilized()) {
-
-            System.out.println("Tractor is harvesting");
-        }
+//        if(vehicle== tractor && crop.isHasBeenFertilized()) {
+//
+//            System.out.println("Tractor is harvesting");
+//        }
 
     }
 }
