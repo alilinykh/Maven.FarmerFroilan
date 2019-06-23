@@ -18,22 +18,30 @@ public class FarmHouseTest {
     public void setUp() throws Exception {
         farmer = new Farmer();
         farmer1 = new Farmer();
-        //ArrayList<Person> farmers = new ArrayList<>();
-//        farmers.add(farmer1);
-//        farmers.add(farmer);
-//        house = new FarmHouse();
+        house = new FarmHouse();
     }
 
     @Test
     public void add() {
+        house.add(farmer1);
+        house.add(farmer);
 
         Integer expected = 2;
-//        Integer actual = house.getFarmHouse().size();
+        Integer actual = house.size();
 
-//        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual);
+
     }
 
     @Test
     public void remove() {
+        house.add(farmer1);
+        house.add(farmer);
+        house.remove(farmer);
+
+        Integer expected = 1;
+        Integer actual = house.size();
+
+        Assert.assertEquals(expected,actual);
     }
 }

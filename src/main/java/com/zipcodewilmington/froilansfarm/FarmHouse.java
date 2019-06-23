@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FarmHouse {
-    private List <Person> farmHouse = new ArrayList<>();
+    private List <Person> farmHouse;
+
+    public FarmHouse() {
+        farmHouse = new ArrayList<>();
+    }
 
     public List<Person> getFarmHouse() {
         return farmHouse;
@@ -21,6 +25,14 @@ public class FarmHouse {
         this.farmHouse = farmHouse;
     }
 
-    public void add(Person person){};
-    public void remove(Person person){};
+    public void add(Person person){
+        farmHouse.add(person);
+    };
+    public void remove(Person person){
+        farmHouse.remove(person);
+    };
+    public Integer size(){
+        return farmHouse.size();
+    };
+
 }
