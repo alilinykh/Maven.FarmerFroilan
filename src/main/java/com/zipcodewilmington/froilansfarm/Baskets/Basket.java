@@ -16,7 +16,6 @@ public class Basket <T extends Edible> implements Edible {
 
     }
 
-
     public void add(T edible){
         list.add(edible);
     }
