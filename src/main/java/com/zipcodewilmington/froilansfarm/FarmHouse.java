@@ -9,18 +9,19 @@ public class FarmHouse {
     private List <Person> farmHouse = new ArrayList<Person>();
 
     public List<Person> getFarmHouse() {
+
         return farmHouse;
     }
 
     public void setFarmHouse(List<Person> farmHouse) {
+
         this.farmHouse = farmHouse;
     }
 
 
     public FarmHouse(List<Person> farmHouse) {
+
         this.farmHouse = farmHouse;
     }
 
-    public void add(Person person){};
-    public void remove(Person person){};
 }

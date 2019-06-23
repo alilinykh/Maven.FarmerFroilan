@@ -1,11 +1,9 @@
 package com.zipcodewilmington.froilansfarm;
 
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import com.zipcodewilmington.froilansfarm.AnimalStorage.ChickenCoop;
 import com.zipcodewilmington.froilansfarm.AnimalStorage.Stable;
 import com.zipcodewilmington.froilansfarm.FieldRelated.Field;
-import com.zipcodewilmington.froilansfarm.PersonRelated.Froilanda;
 
 public class Farm {
 

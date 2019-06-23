@@ -18,17 +18,13 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
 
     Crop crop = new Crop();
-    Tractor tractor = new Tractor();
+    //Tractor tractor = new Tractor();
 
     public String makeNoise() {
 
         return "Tractor noise";
     }
 
-    public void harvest(Crop crop) {
-
-
-    }
     public void harvest(CropRow crops, Basket basket){
         Integer counter = 0;
         Crop tempCrop = crops.getCrop();
