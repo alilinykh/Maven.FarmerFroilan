@@ -31,5 +31,7 @@ public class Basket <T extends Edible> implements Edible {
 
     }
 
-
+    public ArrayList<T> getList() {
+        return list;
+    }
 }

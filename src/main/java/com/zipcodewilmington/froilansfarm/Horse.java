@@ -3,10 +3,13 @@ package com.zipcodewilmington.froilansfarm;
 import com.zipcodewilmington.froilansfarm.Baskets.Basket;
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
+import com.zipcodewilmington.froilansfarm.Edibles.Egg;
 
-import java.util.Base64;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Horse extends Animal implements Ridable {
+
     private boolean ready = false;
     Basket cornBasket = new Basket<EarCorn>();
     Horse horse;
@@ -34,7 +37,8 @@ public class Horse extends Animal implements Ridable {
     }
 
     public void eat(Edible edible) {
-        //cornBasket.remove(edible);
+
+
 
     }
 
