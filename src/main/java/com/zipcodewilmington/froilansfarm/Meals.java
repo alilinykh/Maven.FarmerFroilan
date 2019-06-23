@@ -30,7 +30,10 @@ public class Meals {
         return new Meals();
     }
 
-    public void feedChicken () {}
+    public Meals feedChicken (Basket corn) {
+        corn.remove(1);
+        return new Meals();
+    }
 
 
 }
