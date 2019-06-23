@@ -30,7 +30,7 @@ public class CornBasketTest {
         EarCorn corn = new EarCorn();
         EarCorn corn2 = new EarCorn();
         EarCorn corn3 = new EarCorn();
-        Basket basket = new Basket<CornBasket>();
+        Basket basket = new Basket<EarCorn>();
         basket.add(corn);
         basket.add(corn2);
         basket.add(corn3);
@@ -44,7 +44,7 @@ public class CornBasketTest {
         EarCorn corn = new EarCorn();
         EarCorn corn2 = new EarCorn();
         EarCorn corn3 = new EarCorn();
-        Basket basket = new Basket<CornBasket>();
+        Basket basket = new Basket<EarCorn>();
         basket.add(corn);
         basket.add(corn2);
         basket.add(corn3);
