@@ -27,10 +27,6 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
     public void harvest(Crop crop) {
 
-//        if(vehicle== tractor && crop.isHasBeenFertilized()) {
-//
-//            System.out.println("Tractor is harvesting");
-//        }
-
+        tractor.harvest(crop);
     }
 }

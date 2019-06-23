@@ -12,6 +12,7 @@ import java.util.List;
 public class CropRow extends Field {
 
 
+
     private Boolean hasBeenFertilized;
     private List<Crop> cropRow;
 
@@ -42,4 +43,7 @@ public class CropRow extends Field {
     }
 
 
+    public Boolean getHasBeenFertilized() {
+        return hasBeenFertilized;
+    }
 }

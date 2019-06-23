@@ -10,10 +10,7 @@ import static org.junit.Assert.*;
 
 public class TractorTest {
 
-    @Test
-    public void harvest() {
-        ArrayList<Crop> crops ;
-    }
+
 
     @Test
     public void makeNoise() {
