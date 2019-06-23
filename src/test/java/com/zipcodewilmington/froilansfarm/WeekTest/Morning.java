@@ -8,6 +8,8 @@ import com.zipcodewilmington.froilansfarm.Baskets.TomatoBasket;
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 import com.zipcodewilmington.froilansfarm.Edibles.Egg;
 import com.zipcodewilmington.froilansfarm.Edibles.Tomato;
+import com.zipcodewilmington.froilansfarm.PersonRelated.Farmer;
+import com.zipcodewilmington.froilansfarm.PersonRelated.Person;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Pilot;
 import org.junit.Assert;
 import org.junit.Before;
@@ -57,6 +59,16 @@ public class Morning {
         Horse fred = new Horse();
         fred.eat(meal.mealHorse(cornbasket));
         Integer expected = 1;
+        Integer actual = cornbasket.size();
+
+
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void chickenEatTest() {
+        Chicken fred = new Chicken();
+        fred.eat(meal.feedChicken(cornbasket));
+        Integer expected = 3;
         Integer actual = cornbasket.size();
 
 
