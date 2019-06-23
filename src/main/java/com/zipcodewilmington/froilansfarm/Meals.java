@@ -7,8 +7,7 @@ import com.zipcodewilmington.froilansfarm.Baskets.TomatoBasket;
 
 public class Meals {
 
-    public void breakfast (Integer numCorn, Integer numTom, Integer numEggs) {
-    }
+
 
     public Meals mealHorse (Basket corn) {
         corn.remove(3);

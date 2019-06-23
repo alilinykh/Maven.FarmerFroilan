@@ -32,7 +32,12 @@ public class CropRow extends Field {
     }
 
     public void remove(){
+        //Crop temp = cropRow.get(index);
         cropRow.remove(0);
+        //return temp;
+    }
+    public Crop getCrop() {
+        return cropRow.get(0);
     }
     public Boolean getHasBeenFertilized() {
         return this.hasBeenFertilized;
