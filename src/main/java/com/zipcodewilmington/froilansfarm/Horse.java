@@ -34,8 +34,9 @@ public class Horse extends Animal implements Ridable {
     }
 
     public void eat(Edible edible) {
-        //cornBasket.remove(edible);
+
 
     }
+    public void eat(Meals meal){};
 
 }
