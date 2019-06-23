@@ -7,7 +7,11 @@ import com.zipcodewilmington.froilansfarm.Ridable;
 
 public class Farmer extends Person implements Botanist, Rider {
 
-    public void plants(Crop crop, CropRow cropRow) {
+    public void plants(Crop crop, CropRow cropRow,Integer numOfCrops) {
+        for (int i = 0; i <numOfCrops ; i++) {
+            cropRow.add(crop);
+        }
+
         
     }
 
