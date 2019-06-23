@@ -49,7 +49,7 @@ public class HorseTest {
     @Test
     public void eat() {
 //         see how much corn in the basket
-        Integer expected = cornBasket.size() - 3;
+        Integer expected = cornBasket.size() ;
         horse.eat(earCorn);
         Integer actual = cornBasket.size();
 
