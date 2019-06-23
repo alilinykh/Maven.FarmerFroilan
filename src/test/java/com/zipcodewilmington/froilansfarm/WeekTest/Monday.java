@@ -1,7 +1,8 @@
 package com.zipcodewilmington.froilansfarm.WeekTest;
 
 
-import com.zipcodewilmington.froilansfarm.CropRow;
+
+import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Farmer;
 import com.zipcodewilmington.froilansfarm.PersonRelated.Pilot;
 import com.zipcodewilmington.froilansfarm.VehicleRelated.Aircraft;
@@ -29,6 +30,10 @@ public class Monday {
         Boolean actual = cropRow.getHasBeenFertilized();
         Assert.assertEquals(expected, actual);
 
+
+    }
+    @Test
+    public void harvestTest(){
 
     }
 

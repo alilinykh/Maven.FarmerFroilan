@@ -9,24 +9,16 @@ import java.util.ArrayList;
 public class Tractor extends Vehicle implements FarmVehicle {
 
 
-    Vehicle vehicle = new Tractor();
+    Crop crop = new Crop();
     Tractor tractor = new Tractor();
-    public void harvest(CropRow cropRow) {
-        ArrayList<Crop> crops = cropRow.get();
-
-    }
 
     public String makeNoise() {
 
         return "Tractor noise";
-
-
-
     }
-
 
     public void harvest(Crop crop) {
 
-        tractor.harvest(crop);
+
     }
 }

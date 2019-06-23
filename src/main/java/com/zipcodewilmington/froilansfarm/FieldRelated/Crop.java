@@ -3,9 +3,15 @@ package com.zipcodewilmington.froilansfarm.FieldRelated;
 public class Crop {
 
 
-    private boolean hasBeenFertilized;
+    private Boolean hasBeenFertilized = true;
     private boolean hasBeenHarvested;
 
 
+    public Boolean isHasBeenFertilized() {
+        return hasBeenFertilized;
+    }
 
+    public Boolean isHasBeenHarvested() {
+        return hasBeenHarvested;
+    }
 }
