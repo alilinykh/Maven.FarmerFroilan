@@ -6,6 +6,8 @@ public class CropDuster extends Vehicle implements Aircraft {
     public void fly() {
     }
     public void fertilize(CropRow cropRow) {
+        cropRow.fertilize();
+        System.out.println(cropRow.getCrop().getType()+ " has been fertilized");
 
     }
 
