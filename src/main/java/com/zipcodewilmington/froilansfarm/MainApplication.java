@@ -5,11 +5,9 @@ package com.zipcodewilmington.froilansfarm;
  */
 public class MainApplication {
     public static void main(String[] args) {
-        Farm farm = new Farm();
-        farm.creationDay();
-
-        FarmAction farmAction = FarmAction.getInstance();
-        farmAction.monday();
+        farmersLife week = new farmersLife();
+        week.sunday();
+        week.monday();
 
 
     }

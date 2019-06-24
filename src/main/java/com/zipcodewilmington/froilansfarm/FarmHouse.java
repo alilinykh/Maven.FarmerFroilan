@@ -9,22 +9,9 @@ public class FarmHouse {
     private List <Person> farmHouse;
 
     public FarmHouse() {
+
         farmHouse = new ArrayList<>();
     }
-
-    public List<Person> getFarmHouse() {
-        return farmHouse;
-    }
-
-    public void setFarmHouse(List<Person> farmHouse) {
-        this.farmHouse = farmHouse;
-    }
-
-
-    public FarmHouse(List<Person> farmHouse) {
-        this.farmHouse = farmHouse;
-    }
-
     public void add(Person person){
         farmHouse.add(person);
     };

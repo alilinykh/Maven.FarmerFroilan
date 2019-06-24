@@ -44,4 +44,16 @@ public class FarmHouseTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void size() {
+        house.add(farmer1);
+        house.add(farmer);
+        house.remove(farmer);
+
+        Integer expected = 1;
+        Integer actual = house.size();
+
+        Assert.assertEquals(expected,actual);
+    }
 }

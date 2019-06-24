@@ -7,18 +7,13 @@ import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 import java.util.Base64;
 
 public class Horse extends Animal implements Ridable {
-    private boolean ready = false;
+    private boolean ready = true;
     Basket cornBasket = new Basket<EarCorn>();
     Horse horse;
 
     public boolean getReady() {
         return ready;
     }
-
-    public void setReady(boolean ready) {
-        this.ready = ready;
-    }
-
 
     public void mount() {
         ready = true;
@@ -32,10 +27,14 @@ public class Horse extends Animal implements Ridable {
         return "horseNoise";
 
     }
+    public void eat(Meals meal){};
 
+    @Override
     public void eat(Edible edible) {
 
     }
-    public void eat(Meals meal){};
 
+    public void setReady(boolean ready) {
+        this.ready = ready;
+    }
 }

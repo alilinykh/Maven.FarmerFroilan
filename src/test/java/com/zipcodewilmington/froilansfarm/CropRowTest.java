@@ -41,7 +41,7 @@ public class CropRowTest {
         cropRow1.add(new CornStalk());
         cropRow1.add(new CornStalk());
         Integer actual = cropRow1.count();
-        Integer expected = 5;
+        Integer expected = 6;
         Assert.assertEquals(expected, actual);
 
 
@@ -53,14 +53,14 @@ public class CropRowTest {
 
 
        Integer actual = cropRow1.getCropRow().size();;
-        Integer expected = 1;
+        Integer expected = 2;
        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void count() {
         Integer actual = cropRow1.count();
-        Integer expected = 1;
+        Integer expected = 2;
         Assert.assertEquals(expected, actual);
     }
 

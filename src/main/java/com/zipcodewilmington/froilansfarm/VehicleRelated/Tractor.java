@@ -12,9 +12,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
     }
 
     public String makeNoise() {
-        return null;
-
-
+        return "tractor noise";
 
     }
     public void harvest(CropRow crops, Basket basket){
