@@ -4,7 +4,9 @@ import com.zipcodewilmington.froilansfarm.AnimalStorage.AnimalStorage;
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
 import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
+import com.zipcodewilmington.froilansfarm.Horse;
 import com.zipcodewilmington.froilansfarm.Ridable;
+import com.zipcodewilmington.froilansfarm.VehicleRelated.Tractor;
 
 import java.util.ArrayList;
 
@@ -25,7 +27,13 @@ public class Farmer extends Person implements Botanist, Rider {
 
     public void ride(Ridable ridable) {
         if (ridable instanceof Ridable) {
-                System.out.print("ride horse");
+            if(ridable.getClass().equals(Horse.class)) {
+                System.out.print(" ride horse ");
+            }
+            if(ridable.getClass().equals(Tractor.class)) {
+                System.out.print(" TRRRRRRRaaaaacttor in action! \n");
+            }
+
         }
 
     }

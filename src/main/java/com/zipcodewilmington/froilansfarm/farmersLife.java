@@ -23,6 +23,7 @@ public class farmersLife {
     }
 
     public void monday() {
+        System.out.println("its monday!");
         farm.everyday();
         farm.getFroilanda().fly(farm.getCropDuster());
         for (int i = 0; i <farm.getCropRows().size(); i++) {
@@ -33,6 +34,7 @@ public class farmersLife {
         //cropDuster
     }
     public void tuesday() {
+        System.out.println("its tuesday!");
         farm.everyday();
         farm.getFroilan().ride(farm.getTractor());
         Integer counter = 0;
@@ -51,15 +53,19 @@ public class farmersLife {
         }
     }
     public void wednesday() {
+        System.out.println("its wednesday!");
         farm.everyday();
     }
     public void thursday() {
+        System.out.println("its thursday!");
         farm.everyday();
     }
     public void friday() {
+        System.out.println("its friday!");
         farm.everyday();
     }
     public void saturday() {
+        System.out.println("its saturday!");
         farm.everyday();
     }
 
