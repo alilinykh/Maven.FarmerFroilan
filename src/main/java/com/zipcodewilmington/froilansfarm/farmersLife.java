@@ -2,6 +2,11 @@ package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 import com.zipcodewilmington.froilansfarm.FieldRelated.*;
+import com.zipcodewilmington.froilansfarm.FieldRelated.CornStalk;
+import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
+import com.zipcodewilmington.froilansfarm.FieldRelated.PotatoPlant;
+import com.zipcodewilmington.froilansfarm.FieldRelated.TomatoPlant;
+import com.zipcodewilmington.froilansfarm.VehicleRelated.CropDuster;
 
 public class farmersLife {
     private Farm farm = new Farm();
@@ -10,10 +15,7 @@ public class farmersLife {
     public void sunday() {
         System.out.println("Its sunday!");
         farm.everyday();
-        System.out.println("num of eggs " + farm.getEggBasket().size());
-        System.out.println("num of corn " + farm.getCornBasket().size());
-        System.out.println("num of potato " + farm.getPotatoBasket().size());
-        System.out.println("num of tomato " + farm.getTomatoBasket().size());
+
 
         farm.getFroilan().plants(new CornStalk(), farm.getField().getCropRows().get(0),5);
         farm.getFroilan().plants(new PotatoPlant(),farm.getField().getCropRows().get(1),5);
@@ -22,7 +24,12 @@ public class farmersLife {
 
     public void monday() {
         farm.everyday();
+        farm.getFroilanda().fly(farm.getCropDuster());
+        for (int i = 0; i <farm.cropRows.size(); i++) {
+            System.out.println("Row "+ (i+1) + ":" );
+            farm.getCropDuster().fertilize(farm.cropRows.get(i));
 
+        }
         //cropDuster
     }
     public void tuesday() {

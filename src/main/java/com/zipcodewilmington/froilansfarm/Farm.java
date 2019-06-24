@@ -38,6 +38,9 @@ public class Farm {
     private Basket eggBasket;
     //Farmer and Pilot
     private Farmer froilan;
+
+
+
     private Pilot froilanda;
 
     private FarmHouse farmhouse;
@@ -49,6 +52,9 @@ public class Farm {
     private CropRow cropRow3;
     private CropRow cropRow4;
     private CropRow cropRow5;
+
+
+
     //vehicles
     private CropDuster cropDuster;
     private Tractor tractor;
@@ -121,6 +127,7 @@ public class Farm {
         eatFroilan();
         eatFroylanda();
         rideHorses();
+        currentInventory();
     }
     public void filCropRows() {
         for (int i = 0; i < 5; i++) {
@@ -220,6 +227,13 @@ public class Farm {
         }
         System.out.println("Froilan rode " + coutner + " horses today.");
     }
+    private void currentInventory(){
+        System.out.println("num of eggs " + getEggBasket().size());
+        System.out.println("num of corn " + getCornBasket().size());
+        System.out.println("num of potato " + getPotatoBasket().size());
+        System.out.println("num of tomato " + getTomatoBasket().size());
+
+    }
 
     public Farmer getFroilan() {
         return froilan;
@@ -252,4 +266,6 @@ public class Farm {
     public ArrayList<CropRow> getCropRows() {
         return cropRows;
     }
+    public Pilot getFroilanda() { return this.froilanda; }
+    public CropDuster getCropDuster() { return this.cropDuster; }
 }
