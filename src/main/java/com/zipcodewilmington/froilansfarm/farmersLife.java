@@ -9,6 +9,10 @@ import com.zipcodewilmington.froilansfarm.FieldRelated.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.VehicleRelated.CropDuster;
 
 public class farmersLife {
+    public Farm getFarm() {
+        return this.farm;
+    }
+
     private Farm farm = new Farm();
 
 
@@ -16,14 +20,14 @@ public class farmersLife {
         System.out.println("Its sunday!");
         farm.everyday();
 
-git
+
         farm.getFroilan().plants(new CornStalk(), farm.getField().getCropRows().get(0),5);
         farm.getFroilan().plants(new PotatoPlant(),farm.getField().getCropRows().get(1),5);
         farm.getFroilan().plants(new TomatoPlant(),farm.getField().getCropRows().get(2),5);
     }
 
     public void monday() {
-        System.out.println("its monday!");
+        System.out.println("Its Monday");
         farm.everyday();
         farm.getFroilanda().fly(farm.getCropDuster());
         for (int i = 0; i <farm.getCropRows().size(); i++) {
@@ -34,7 +38,7 @@ git
         //cropDuster
     }
     public void tuesday() {
-        System.out.println("its tuesday!");
+        System.out.println("Its Tuesday");
         farm.everyday();
         farm.getFroilan().ride(farm.getTractor());
         Integer counter = 0;
@@ -53,19 +57,15 @@ git
         }
     }
     public void wednesday() {
-        System.out.println("its wednesday!");
         farm.everyday();
     }
     public void thursday() {
-        System.out.println("its thursday!");
         farm.everyday();
     }
     public void friday() {
-        System.out.println("its friday!");
         farm.everyday();
     }
     public void saturday() {
-        System.out.println("its saturday!");
         farm.everyday();
     }
 

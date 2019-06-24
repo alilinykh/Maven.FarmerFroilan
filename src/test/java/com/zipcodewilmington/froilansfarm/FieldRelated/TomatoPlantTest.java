@@ -38,4 +38,12 @@ public class TomatoPlantTest {
     public void ImplementantationTest() {
         Assert.assertTrue(tomatoPlant instanceof Produce);
     }
+    @Test
+    public void getType() {
+        Crop test = new TomatoPlant();
+        test.getType();
+        String actual = test.getType();
+        String expected = "Tomato Plants";
+        Assert.assertEquals(expected, actual);
+    }
 }
