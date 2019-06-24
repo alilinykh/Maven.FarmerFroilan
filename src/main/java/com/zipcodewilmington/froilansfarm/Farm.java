@@ -43,7 +43,7 @@ public class Farm {
     private FarmHouse farmhouse;
     //field and cropRows
     private Field field;
-    ArrayList<CropRow> cropRows = new ArrayList<>();
+    private ArrayList<CropRow> cropRows;
     private CropRow cropRow1;
     private CropRow cropRow2;
     private CropRow cropRow3;
@@ -124,10 +124,10 @@ public class Farm {
     }
     public void filCropRows() {
         for (int i = 0; i < 5; i++) {
-            cropRow1.add(new TomatoPlant());
-            cropRow2.add(new PotatoPlant());
+            cropRow1.add(new CornStalk());
+            cropRow2.add(new TomatoPlant());
             cropRow3.add(new CornStalk());
-            cropRow4.add(new CornStalk());
+            cropRow4.add(new PotatoPlant());
             cropRow5.add(new CornStalk());
             field.add(cropRow1);
             field.add(cropRow2);
@@ -203,6 +203,7 @@ public class Farm {
         tomatoBasket.remove(1);
         eggBasket.remove(2);
     }
+
     private void rideHorses() {
         Integer coutner = 0;
         for (Stable s : stables
@@ -242,5 +243,13 @@ public class Farm {
 
     public Basket getEggBasket() {
         return eggBasket;
+    }
+
+    public Tractor getTractor() {
+        return tractor;
+    }
+
+    public ArrayList<CropRow> getCropRows() {
+        return cropRows;
     }
 }

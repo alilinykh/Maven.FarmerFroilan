@@ -18,16 +18,14 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
     public void mount(Ridable ridable) {
-
     }
 
     public void dismount(Ridable ridable) {
-
     }
 
     public void ride(Ridable ridable) {
         if (ridable instanceof Ridable) {
-                System.out.println("ride");
+                System.out.print("ride horse");
         }
 
     }

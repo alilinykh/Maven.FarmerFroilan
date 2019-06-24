@@ -27,10 +27,6 @@ public class Basket <T extends Edible> extends Edible {
         for (int i = 0; i < numToRemove; i++) {
             list.remove(0);
         }
-
     }
 
-    public ArrayList<T> getList() {
-        return list;
-    }
 }

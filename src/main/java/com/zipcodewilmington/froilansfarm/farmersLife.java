@@ -1,8 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
-import com.zipcodewilmington.froilansfarm.FieldRelated.CornStalk;
-import com.zipcodewilmington.froilansfarm.FieldRelated.PotatoPlant;
-import com.zipcodewilmington.froilansfarm.FieldRelated.TomatoPlant;
+import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
+import com.zipcodewilmington.froilansfarm.FieldRelated.*;
 
 public class farmersLife {
     private Farm farm = new Farm();
@@ -23,11 +22,26 @@ public class farmersLife {
 
     public void monday() {
         farm.everyday();
+
         //cropDuster
     }
     public void tuesday() {
         farm.everyday();
-        //tractor harvest
+        farm.getFroilan().ride(farm.getTractor());
+        Integer counter = 0;
+        for (CropRow row: farm.getCropRows()
+             ) {
+            if (row.getCrop().getClass().equals(CornStalk.class)) {
+                farm.getTractor().harvest(row, farm.getCornBasket());
+                System.out.println("harvested some corn!");
+            } else if (row.getCrop().getClass().equals(PotatoPlant.class)) {
+                farm.getTractor().harvest(row, farm.getPotatoBasket());
+                System.out.println("harvested some potatoes!");
+            } else if (row.getCrop().getClass().equals(TomatoPlant.class)) {
+                farm.getTractor().harvest(row, farm.getTomatoBasket());
+                System.out.println("harvested some tomatoes!");
+            }
+        }
     }
     public void wednesday() {
         farm.everyday();
