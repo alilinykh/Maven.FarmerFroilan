@@ -19,4 +19,6 @@ public class Person implements Eater, NoiseMaker {
 
     public void eat(Edible edible) {
     }
+
+
 }
