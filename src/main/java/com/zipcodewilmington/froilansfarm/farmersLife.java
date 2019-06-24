@@ -9,6 +9,10 @@ import com.zipcodewilmington.froilansfarm.FieldRelated.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.VehicleRelated.CropDuster;
 
 public class farmersLife {
+    public Farm getFarm() {
+        return this.farm;
+    }
+
     private Farm farm = new Farm();
 
 
