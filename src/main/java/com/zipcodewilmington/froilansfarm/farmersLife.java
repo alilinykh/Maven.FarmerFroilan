@@ -16,7 +16,7 @@ public class farmersLife {
         System.out.println("Its sunday!");
         farm.everyday();
 
-
+git
         farm.getFroilan().plants(new CornStalk(), farm.getField().getCropRows().get(0),5);
         farm.getFroilan().plants(new PotatoPlant(),farm.getField().getCropRows().get(1),5);
         farm.getFroilan().plants(new TomatoPlant(),farm.getField().getCropRows().get(2),5);
