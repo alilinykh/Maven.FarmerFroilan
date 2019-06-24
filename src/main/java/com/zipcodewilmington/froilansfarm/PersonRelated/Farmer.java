@@ -31,7 +31,7 @@ public class Farmer extends Person implements Botanist, Rider {
                 System.out.print(" ride horse ");
             }
             if(ridable.getClass().equals(Tractor.class)) {
-                System.out.print(" TRRRRRRRaaaaacttor in action! \n");
+                System.out.println("TRRRRRRRaaaaacttor in action!");
             }
 
         }

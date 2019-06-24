@@ -19,8 +19,6 @@ public class farmersLife {
     public void sunday() {
         System.out.println("Its sunday!");
         farm.everyday();
-
-
         farm.getFroilan().plants(new CornStalk(), farm.getField().getCropRows().get(0),5);
         farm.getFroilan().plants(new PotatoPlant(),farm.getField().getCropRows().get(1),5);
         farm.getFroilan().plants(new TomatoPlant(),farm.getField().getCropRows().get(2),5);
@@ -41,9 +39,10 @@ public class farmersLife {
         System.out.println("Its Tuesday");
         farm.everyday();
         farm.getFroilan().ride(farm.getTractor());
-        Integer counter = 0;
+        Integer i = 1;
         for (CropRow row: farm.getCropRows()
              ) {
+            System.out.println("Row "+ (i) + ":" );
             if (row.getCrop().getClass().equals(CornStalk.class)) {
                 farm.getTractor().harvest(row, farm.getCornBasket());
                 System.out.println("harvested some corn!");
@@ -54,18 +53,23 @@ public class farmersLife {
                 farm.getTractor().harvest(row, farm.getTomatoBasket());
                 System.out.println("harvested some tomatoes!");
             }
+            i++;
         }
     }
     public void wednesday() {
+        System.out.println("Its Wednesday");
         farm.everyday();
     }
     public void thursday() {
+        System.out.println("Its Thursday");
         farm.everyday();
     }
     public void friday() {
+        System.out.println("Its Friday");
         farm.everyday();
     }
     public void saturday() {
+        System.out.println("Its Saturday");
         farm.everyday();
     }
 
