@@ -9,6 +9,6 @@ public class PotatoPlant extends Crop implements Produce<Potato> {
     }
     private String type = "Potato Plants";
     public String getType() {
-        return this.type;
+       return this.type;
     }
 }

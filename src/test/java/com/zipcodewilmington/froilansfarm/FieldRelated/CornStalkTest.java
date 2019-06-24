@@ -36,4 +36,12 @@ public class CornStalkTest {
     public void ImplementantationTest() {
         Assert.assertTrue(cornStalk instanceof Produce);
     }
+    @Test
+    public void getType() {
+        Crop test = new CornStalk();
+        test.getType();
+        String actual = test.getType();
+        String expected = "CornStalks";
+        Assert.assertEquals(expected, actual);
+    }
 }

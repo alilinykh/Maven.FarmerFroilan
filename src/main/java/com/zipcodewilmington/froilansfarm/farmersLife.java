@@ -9,6 +9,10 @@ import com.zipcodewilmington.froilansfarm.FieldRelated.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.VehicleRelated.CropDuster;
 
 public class farmersLife {
+    public Farm getFarm() {
+        return this.farm;
+    }
+
     private Farm farm = new Farm();
 
 
@@ -23,6 +27,7 @@ public class farmersLife {
     }
 
     public void monday() {
+        System.out.println("Its Monday");
         farm.everyday();
         farm.getFroilanda().fly(farm.getCropDuster());
         for (int i = 0; i <farm.getCropRows().size(); i++) {
@@ -33,6 +38,7 @@ public class farmersLife {
         //cropDuster
     }
     public void tuesday() {
+        System.out.println("Its Tuesday");
         farm.everyday();
         farm.getFroilan().ride(farm.getTractor());
         Integer counter = 0;
