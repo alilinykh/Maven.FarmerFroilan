@@ -25,9 +25,9 @@ public class farmersLife {
     public void monday() {
         farm.everyday();
         farm.getFroilanda().fly(farm.getCropDuster());
-        for (int i = 0; i <farm.cropRows.size(); i++) {
+        for (int i = 0; i <farm.getCropRows().size(); i++) {
             System.out.println("Row "+ (i+1) + ":" );
-            farm.getCropDuster().fertilize(farm.cropRows.get(i));
+            farm.getCropDuster().fertilize(farm.getCropRows().get(i));
 
         }
         //cropDuster
