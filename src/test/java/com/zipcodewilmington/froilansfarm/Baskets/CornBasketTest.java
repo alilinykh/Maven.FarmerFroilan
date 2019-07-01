@@ -30,7 +30,7 @@ public class CornBasketTest {
         EarCorn corn = new EarCorn();
         EarCorn corn2 = new EarCorn();
         EarCorn corn3 = new EarCorn();
-        Basket basket = new Basket<CornBasket>();
+        Basket basket = new Basket<EarCorn>();
         basket.add(corn);
         basket.add(corn2);
         basket.add(corn3);
@@ -39,12 +39,24 @@ public class CornBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void constructortest(){
+        Basket basket = new Basket<EarCorn>();
+        //CornBasket cbasket = new CornBasket(basket);
+
+        Integer actual = basket.size();
+        Integer expected = 0;
+        Assert.assertEquals(expected, actual);
+
+    }
+
     @Test
     public void removeTest(){
         EarCorn corn = new EarCorn();
         EarCorn corn2 = new EarCorn();
         EarCorn corn3 = new EarCorn();
-        Basket basket = new Basket<CornBasket>();
+        Basket basket = new Basket<EarCorn>();
         basket.add(corn);
         basket.add(corn2);
         basket.add(corn3);
@@ -54,6 +66,7 @@ public class CornBasketTest {
         Assert.assertEquals(expected, actual);
 
     }
+
 
     @After
     public void tearDown() throws Exception {

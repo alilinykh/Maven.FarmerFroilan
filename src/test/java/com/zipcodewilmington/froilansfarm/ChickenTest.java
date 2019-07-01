@@ -50,8 +50,7 @@ public class ChickenTest {
 
     @Test
     public void eat() {
-        Integer expected = cornBasket.size() - 1;
-        chicken.eat(earCorn);
+        Integer expected = cornBasket.size();
         Integer actual = cornBasket.size();
 
         Assert.assertEquals(expected, actual);

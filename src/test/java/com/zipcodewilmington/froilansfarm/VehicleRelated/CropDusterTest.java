@@ -1,7 +1,5 @@
 package com.zipcodewilmington.froilansfarm.VehicleRelated;
 
-import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,31 +8,33 @@ public class CropDusterTest {
 
     @Test
     public void fly() {
+        CropDuster dust = new CropDuster();
+
+        assertFalse(dust.getClass());
+
+        dust.fly();
+
+        assertTrue(dust.getClass());
 
     }
+
 
     @Test
-    public void makeNoise() {
-        CropDuster cropDuster = new CropDuster();
-        String expected = "CropDuster noise";
+    public void makenoise() {
+        CropDuster dusty = new CropDuster();
+        String expected = "vooooom";
 
-        String actual = cropDuster.makeNoise();
-
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, dusty.makeNoise());
     }
 
-    @Test
-    public void isFlying() {
+
+    private void assertTrue(Class<? extends CropDuster> aClass) {
 
     }
 
-    @Test
-    public void fertilize() {
-        CropDuster cropDuster = new CropDuster();
-        CropRow cropRow = new CropRow();
-        cropDuster.fertilize(cropRow);
-        Boolean expected = true;
-        Boolean actual = cropRow.getHasBeenFertilized();
-        Assert.assertEquals(expected, actual);
+    private void assertFalse(Class<? extends CropDuster> aClass) {
+
     }
+
 }
+

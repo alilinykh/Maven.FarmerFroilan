@@ -8,7 +8,7 @@ public class Field {
     private List<CropRow> cropRows;
 
     public Field(){
-        cropRows = new ArrayList<CropRow>();
+        cropRows = new ArrayList<>();
     }
 
     public void add(CropRow cropRow) {

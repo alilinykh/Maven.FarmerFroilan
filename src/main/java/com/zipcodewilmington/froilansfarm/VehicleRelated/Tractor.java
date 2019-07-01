@@ -1,30 +1,20 @@
 package com.zipcodewilmington.froilansfarm.VehicleRelated;
 
-
-import com.zipcodewilmington.froilansfarm.Edibles.Edible;
-import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
-import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
-
-import java.util.ArrayList;
-
 import com.zipcodewilmington.froilansfarm.Baskets.Basket;
 import com.zipcodewilmington.froilansfarm.Edibles.EarCorn;
 import com.zipcodewilmington.froilansfarm.Edibles.Edible;
 import com.zipcodewilmington.froilansfarm.FieldRelated.Crop;
 import com.zipcodewilmington.froilansfarm.FieldRelated.CropRow;
 
-
 public class Tractor extends Vehicle implements FarmVehicle {
+    public void harvest(Crop crop) {
 
-
-    Crop crop = new Crop();
-    //Tractor tractor = new Tractor();
-
-    public String makeNoise() {
-
-        return "Tractor noise";
     }
 
+    public String makeNoise() {
+        return "tractor noise";
+
+    }
     public void harvest(CropRow crops, Basket basket){
         Integer counter = 0;
         Crop tempCrop = crops.getCrop();

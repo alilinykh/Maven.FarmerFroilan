@@ -29,7 +29,7 @@ public class Chicken extends Animal implements Produce<Egg> {
     }
 
     public void eat(Edible edible) {
-
+        cornBasket.remove(2);
 
         }
     public void eat(Meals meal) {

@@ -6,22 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FarmHouse {
-    private List <Person> farmHouse = new ArrayList<Person>();
+    private List <Person> farmHouse;
 
-    public List<Person> getFarmHouse() {
+    public FarmHouse() {
 
-        return farmHouse;
+        farmHouse = new ArrayList<>();
     }
-
-    public void setFarmHouse(List<Person> farmHouse) {
-
-        this.farmHouse = farmHouse;
-    }
-
-
-    public FarmHouse(List<Person> farmHouse) {
-
-        this.farmHouse = farmHouse;
-    }
+    public void add(Person person){
+        farmHouse.add(person);
+    };
+    public void remove(Person person){
+        farmHouse.remove(person);
+    };
+    public Integer size(){
+        return farmHouse.size();
+    };
 
 }
