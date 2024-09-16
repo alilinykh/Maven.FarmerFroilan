@@ -39,7 +39,10 @@ public class CropRow extends Field {
     public Crop getCrop() {
         return cropRow.get(0);
     }
+
     public Boolean getHasBeenFertilized() {
         return this.hasBeenFertilized;
     }
+
+
 }

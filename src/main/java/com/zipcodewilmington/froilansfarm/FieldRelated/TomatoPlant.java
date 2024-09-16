@@ -12,6 +12,7 @@ public class TomatoPlant extends Crop implements Produce<Tomato> {
 
     private String type = "Tomato Plants";
     public Tomato yield() {
+
         return new Tomato();
     }
 }
